@@ -16,6 +16,6 @@ res = [
     '',
     _('Lot ?'),
 ]
-if move.product_id.tracking == 'none':
+if not move.product_id.track_incoming:
     val = ''
     act = 'A'
